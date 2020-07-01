@@ -4,22 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- To Stop Zoom-in-out -->
     <meta name="viewport" content="width=device-width, user-scalable=no">
+    <!-- For changing Address bar color For Chrome, firefox, opera & os -->
+    <meta name="theme-color" content="#4891f0">
+    <!-- For changing Address bar color For Windows Phone  -->
+    <meta name="msapplication-navbutton-color" content="#4891f0">
+    <!-- For changing Address bar color For Safari/IOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Site title -->
     <title>Separation Process</title>
+    <!-- Site Fav icon -->
     <link rel="icon" href="assets/images/web-logos/favicon.ico">
+    <!-- For External css files -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/swiper.min.css">
     <link href="assets/css/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body onload="bodyload()">
+
+    <div id="pre-loader" class="preloader">
+        <img src="assets/images/pre-loader-image/preloader.gif" alt="Loading...">
+    </div>
 
     <header id="header">
         <div data-aos="fade-right" data-aos-duration="1000" class="logo">
             <a href="index.html"><img src="assets/images/web-logos/logo.png" alt="logo"></a>
         </div>
-        <span data-aos="fade-left" data-aos-duration="1200" id="icon">
+        <span data-aos="fade-down" data-aos-duration="1200" id="icon">
             <i></i>
             <i></i>
             <i></i>
@@ -38,7 +53,7 @@
         </nav>
     </header>
 
-    <div class="swiper-container">
+    <section class="swiper-container">
         <div class="swiper-wrapper ">
             <div class="swiper-slide">
                 <img src="assets/images/banner/banner7.jpg" alt="slide-image-1">
@@ -57,8 +72,7 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
-    </div>
-    </div>
+    </section>
 
 
     <section>
@@ -75,12 +89,12 @@
 
     <section>
         <div class="sec3 wrapper">
-            <a data-aos="fade-down" data-aos-duration="1000" href="#">Explore About us </a>
+            <a data-aos="fade-up" data-aos-duration="1000" href="#">Explore About us </a>
         </div>
     </section>
 
     <section>
-        <div data-aos="fade-down" data-aos-duration="1200" class="sec4">
+        <div data-aos="fade-down" data-aos-duration="2000" class="sec4">
             <div class="content">
                 <div class="heading">
                     <h2>Nostors</h2>
@@ -248,11 +262,10 @@
     </footer>
 
 </body>
-
+<!-- For External js files -->
 <script src="assets/js/swiper.js"></script>
 <script src="assets/js/app.js"></script>
-<script src="assets/css/aos.js"></script>
-<script script src="assets/js/aos.js"></script>
+<script src="assets/js/aos.js"></script>
 <script>
     AOS.init();
 </script>

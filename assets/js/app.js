@@ -1,9 +1,12 @@
 document.querySelector("#icon").addEventListener("click", function() {
     document.querySelector("#nav").classList.toggle("show");
     document.querySelector("#icon").classList.toggle("icon-move");
-    // document.querySelector("#nav").classList.add("container-shift");
+    document.querySelector("body").classList.toggle("body-opc");
 })
 
+function bodyload() {
+    document.getElementById("pre-loader").style.display = "none";
+}
 
 // mybutton = ;
 var prevScrollpos = window.pageYOffset;
@@ -31,6 +34,8 @@ function topFunction() {
 
 
 // 
+
+
 var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
@@ -51,4 +56,5 @@ var mySwiper = new Swiper('.swiper-container', {
     scrollbar: {
         el: '.swiper-scrollbar',
     },
+
 })
